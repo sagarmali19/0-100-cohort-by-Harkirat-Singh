@@ -4,3 +4,10 @@
 // It should go up as time goes by in intervals of 1 second
 
 let counter = 0;
+
+function increaseCounter(){
+    counter++;
+    console.log(counter);
+}
+
+setInterval(increaseCounter, 1000);
