@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script>
+    function getAnimalData(){
+      fetch("https://fakerapi.it/api/v1/persons")
+      .then(function (response){
+        response.json()
+        .then(function(finaldata){
+          console.log(finaldata);
+        })
+      })
+    }
+  </script>
+  <button onclick="getAnimalData()">Get Animal Data</button>
+</body>
+
+</html>
